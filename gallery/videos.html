@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galeria — Filmy</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">
+        <img class="site-logo" src="https://scontent.fktw1-1.fna.fbcdn.net/v/t39.30808-6/468662109_565627399754348_7183000759606468883_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx2048x2048&amp;ctp=s2048x2048&amp;_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=6ee11a&amp;_nc_ohc=WGyO2oW1uCkQ7kNvwGegRhM&amp;_nc_oc=AdrCntsV3CjBanJGCr5Gctete__4TglffPYEWNF4GnEiMbGvzWdRGgiqcQV5SSWwvGg&amp;_nc_zt=23&amp;_nc_ht=scontent.fktw1-1.fna&amp;_nc_gid=imvMAUV27H9ILCyZJcvxTA&amp;_nc_ss=7b289&amp;oh=00_Af_BIOVa2-gaBM8SiEUUNMXkqttSqk0MlWPflNVpHOtD0g&amp;oe=6A2FFC8D" alt="Placeholder logo">
+      </a>
+      <nav class="nav">
+        <a href="../about.html">O nas</a>
+        <a href="../offer.html">Oferta</a>
+        <div class="dropdown">
+          <a class="dropbtn" href="#">Galeria</a>
+          <div class="dropdown-content">
+            <a href="photos.html">Zdjęcia</a>
+            <a href="videos.html">Filmy</a>
+          </div>
+        </div>
+        <a href="../contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Galeria — Filmy</h1>
+    <p>Filmy z YouTube. Kliknij odtwarzacz, aby obejrzeć.</p>
+    <div id="videos-list" style="margin-top:1rem">
+      <!-- Videos rendered from gallery.json -->
+    </div>
+  </main>
+  <script src="gallery.js"></script>
+  <script src="../js/site.js"></script>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-social">
+        <a href="https://www.facebook.com/placeholder" target="_blank" rel="noopener">
+          <img class="social-icon" src="../images/facebook.svg" alt="Facebook">
+          <span class="sr-only">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/placeholder.pl/" target="_blank" rel="noopener">
+          <img class="social-icon" src="../images/instagram.svg" alt="Instagram">
+          <span class="sr-only">Instagram</span>
+        </a>
+        <a href="https://www.youtube.com/@placeholder" target="_blank" rel="noopener">
+          <img class="social-icon" src="../images/youtube.svg" alt="YouTube">
+          <span class="sr-only">YouTube</span>
+        </a>
+      </div>
+      <p>© Placeholder — Wszystkie prawa zastrzeżone</p>
+      <p class="footer-credit">Powered By <a href="https://www.linkedin.com/in/wojciechimiolczyk/" target="_blank" rel="noopener">Wojciech Imiołczyk</a></p>
+    </div>
+  </footer>
+</body>
+</html>
