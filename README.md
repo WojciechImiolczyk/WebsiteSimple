@@ -31,3 +31,5 @@ To publish with GitHub Pages:
 3. Optionally add a `CNAME` file with your custom domain.
 
 Edit the content as needed — replace SVGs with real images and update text. Update navigation links if you change folder names.
+
+Website link: https://wojciechimiolczyk.github.io/WebsiteSimple/
