@@ -5,6 +5,13 @@
   if (!el) return;
 
   var candidates = ['/partials/footer.html','partials/footer.html','../partials/footer.html'];
+  function computeRootPrefix(){
+    var parts = location.pathname.split('/').filter(Boolean);
+    if (parts.length === 0) return '/';
+    // assume repo is first segment (GitHub Pages user site: /<repo>/...)
+    return '/' + parts[0] + '/';
+  }
+
   function tryFetch(i){
     if (i>=candidates.length){
       // fallback: simple inline footer
@@ -15,6 +22,8 @@
       if (!resp.ok) throw new Error('fetch failed');
       return resp.text();
     }).then(function(html){
+      var prefix = computeRootPrefix();
+      html = html.replace(/\[\[ROOT\]\]/g, prefix);
       el.innerHTML = html;
     }).catch(function(){
       tryFetch(i+1);
