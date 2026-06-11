@@ -9,7 +9,9 @@
 body{font-family:Segoe UI, Roboto, Arial, sans-serif;color:var(--text);margin:0;background:var(--bg);line-height:1.5}
 .container{max-width:var(--container);margin:0 auto;padding:1rem}
 .site-header{background:linear-gradient(90deg,rgba(0,0,0,0.02),rgba(0,0,0,0));position:sticky;top:0;z-index:20}
+.site-header .container{padding-left:0;padding-right:0;max-width:100%;margin:0}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0}
+.site-header .header-inner{width:100%;padding:0.5rem 1rem}
 .logo img{height:44px}
 .nav a{margin-left:1rem;color:var(--text);text-decoration:none;font-weight:600}
 /* Dropdown gallery menu */
