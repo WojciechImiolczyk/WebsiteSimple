@@ -4,30 +4,34 @@
   var el = document.getElementById(targetId);
   if (!el) return;
 
-  var candidates = ['/partials/footer.html','partials/footer.html','../partials/footer.html'];
   function computeRootPrefix(){
     var parts = location.pathname.split('/').filter(Boolean);
     if (parts.length === 0) return '/';
-    // assume repo is first segment (GitHub Pages user site: /<repo>/...)
     return '/' + parts[0] + '/';
   }
 
-  function tryFetch(i){
-    if (i>=candidates.length){
-      // fallback: simple inline footer
-      el.innerHTML = '<footer class="site-footer"><div class="container footer-inner"><p>© Placeholder</p></div></footer>';
-      return;
-    }
-    fetch(candidates[i]).then(function(resp){
-      if (!resp.ok) throw new Error('fetch failed');
-      return resp.text();
-    }).then(function(html){
-      var prefix = computeRootPrefix();
-      html = html.replace(/\[\[ROOT\]\]/g, prefix);
-      el.innerHTML = html;
-    }).catch(function(){
-      tryFetch(i+1);
-    });
-  }
-  tryFetch(0);
+  var prefix = computeRootPrefix();
+  var html = '' +
+    '<footer class="site-footer">' +
+    '<div class="container footer-inner">' +
+    '<div class="footer-social">' +
+    '<a href="https://www.facebook.com/placeholder" target="_blank" rel="noopener">' +
+    '<img class="social-icon" src="' + prefix + 'images/facebook.svg" alt="Facebook">' +
+    '<span class="sr-only">Facebook</span>' +
+    '</a>' +
+    '<a href="https://www.instagram.com/placeholder.pl/" target="_blank" rel="noopener">' +
+    '<img class="social-icon" src="' + prefix + 'images/instagram.svg" alt="Instagram">' +
+    '<span class="sr-only">Instagram</span>' +
+    '</a>' +
+    '<a href="https://www.youtube.com/@placeholder" target="_blank" rel="noopener">' +
+    '<img class="social-icon" src="' + prefix + 'images/youtube.svg" alt="YouTube">' +
+    '<span class="sr-only">YouTube</span>' +
+    '</a>' +
+    '</div>' +
+    '<p>© Placeholder — Wszystkie prawa zastrzeżone</p>' +
+    '<p class="footer-credit">Powered By <a href="https://www.linkedin.com/in/wojciechimiolczyk/" target="_blank" rel="noopener">Wojciech Imiołczyk</a></p>' +
+    '</div>' +
+    '</footer>';
+
+  el.innerHTML = html;
 })();
