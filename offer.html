@@ -3,57 +3,67 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Oferta — Placeholder</title>
+  <title data-i18n="page.title.offer">Oferta — Placeholder</title>
   <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="shortcut icon" href="images/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.svg">
 <meta name="theme-color" content="#e91e63">
+<script>window.SITE_ROOT = '';</script>
+<script src="js/i18n.js" defer></script>
 
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Przejdź do treści</a>
 <header class="site-header">
   <div class="container header-inner">
     <a class="logo" href="index.html">
       <img class="site-logo" src="images/logo.svg" alt="Placeholder logo">
     </a>
     <nav class="nav" role="navigation" aria-label="Główna nawigacja">
-      <a href="about.html">O nas</a>
-      <a href="offer.html">Oferta</a>
+      <a href="about.html" data-i18n="nav.about">O nas</a>
+      <a href="offer.html" data-i18n="nav.offer">Oferta</a>
       <div class="dropdown">
-        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Galeria</button>
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false" data-i18n="nav.gallery.label">Galeria</button>
         <div class="dropdown-content">
-          <a href="gallery/photos.html">Zdjęcia</a>
-          <a href="gallery/videos.html">Filmy</a>
+          <a href="gallery/photos.html" data-i18n="nav.gallery.photos">Zdjęcia</a>
+          <a href="gallery/videos.html" data-i18n="nav.gallery.videos">Filmy</a>
         </div>
       </div>
-      <a href="contact.html">Kontakt</a>
+      <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
     </nav>
+      <div class="lang-switcher" aria-label="language switcher">
+      <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski" aria-pressed="false">
+        <img src="images/flag-pl.svg" alt="Polski">
+      </button>
+      <button class="lang-btn" data-lang="en" title="English" aria-label="English" aria-pressed="false">
+        <img src="images/flag-gb.svg" alt="English">
+      </button>
+    </div>
   </div>
  </header>
 
   <section class="hero">
     <div class="container hero-inner">
-      <h1>Oferta</h1>
-      <p>Poznaj naszą ofertę — wydarzenia, wsparcie i możliwości wolontariatu.</p>
+      <h1 data-i18n="offer.heading">Oferta</h1>
+      <p data-i18n="offer.lead">Poznaj naszą ofertę — wydarzenia, wsparcie i możliwości wolontariatu.</p>
     </div>
   </section>
 
   <main id="main-content" class="container about-page">
     <div class="cards">
       <div class="card">
-        <h3>Wydarzenia</h3>
-        <p>Organizujemy i współorganizujemy wydarzenia lokalne.</p>
+        <h3 data-i18n="offer.cards.events.title">Wydarzenia</h3>
+        <p data-i18n="offer.cards.events.desc">Organizujemy i współorganizujemy wydarzenia lokalne.</p>
       </div>
       <div class="card">
-        <h3>Wsparcie</h3>
-        <p>Wsparcie projektów społecznych i partnerstw.</p>
+        <h3 data-i18n="offer.cards.support.title">Wsparcie</h3>
+        <p data-i18n="offer.cards.support.desc">Wsparcie projektów społecznych i partnerstw.</p>
       </div>
       <div class="card">
-        <h3>Wolontariat</h3>
-        <p>Możliwości zaangażowania dla wolontariuszy.</p>
+        <h3 data-i18n="offer.cards.volunteering.title">Wolontariat</h3>
+        <p data-i18n="offer.cards.volunteering.desc">Możliwości zaangażowania dla wolontariuszy.</p>
       </div>
     </div>
   </main>
@@ -75,8 +85,8 @@
         <span class="sr-only">YouTube</span>
       </a>
     </div>
-    <p>© Placeholder — Wszystkie prawa zastrzeżone</p>
-    <p class="footer-credit">Powered By <a href="https://www.linkedin.com/in/wojciechimiolczyk/" target="_blank" rel="noopener">Wojciech Imiołczyk</a></p>
+    <p data-i18n="footer.copy">© Placeholder — Wszystkie prawa zastrzeżone</p>
+    <p class="footer-credit" data-i18n-html="footer.powered">Powered By <a href="https://www.linkedin.com/in/wojciechimiolczyk/" target="_blank" rel="noopener">Wojciech Imiołczyk</a></p>
   </div>
 </footer>
 

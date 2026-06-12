@@ -1,20 +1,28 @@
-<a class="skip-link" href="#main-content">Przejdź do treści</a>
+<a class="skip-link" href="#main-content" data-i18n="skipLink">Przejdź do treści</a>
 <header class="site-header">
   <div class="container header-inner">
     <a class="logo" href="%ROOT%index.html">
       <img class="site-logo" src="%ROOT%images/logo.svg" alt="Placeholder logo">
     </a>
     <nav class="nav" role="navigation" aria-label="Główna nawigacja">
-      <a href="%ROOT%about.html">O nas</a>
-      <a href="%ROOT%offer.html">Oferta</a>
+      <a href="%ROOT%about.html" data-i18n="nav.about">O nas</a>
+      <a href="%ROOT%offer.html" data-i18n="nav.offer">Oferta</a>
       <div class="dropdown">
-        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Galeria</button>
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false" data-i18n="nav.gallery.label">Galeria</button>
         <div class="dropdown-content">
-          <a href="%ROOT%gallery/photos.html">Zdjęcia</a>
-          <a href="%ROOT%gallery/videos.html">Filmy</a>
+          <a href="%ROOT%gallery/photos.html" data-i18n="nav.gallery.photos">Zdjęcia</a>
+          <a href="%ROOT%gallery/videos.html" data-i18n="nav.gallery.videos">Filmy</a>
         </div>
       </div>
-      <a href="%ROOT%contact.html">Kontakt</a>
+      <a href="%ROOT%contact.html" data-i18n="nav.contact">Kontakt</a>
     </nav>
+      <div class="lang-switcher" aria-label="language switcher">
+      <button class="lang-btn" data-lang="pl" title="Polski" aria-label="Polski" aria-pressed="false">
+        <img src="%ROOT%images/flag-pl.svg" alt="Polski">
+      </button>
+      <button class="lang-btn" data-lang="en" title="English" aria-label="English" aria-pressed="false">
+        <img src="%ROOT%images/flag-gb.svg" alt="English">
+      </button>
+    </div>
   </div>
  </header>
