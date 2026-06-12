@@ -18,9 +18,11 @@ body{font-family:Segoe UI, Roboto, Arial, sans-serif;color:var(--text);margin:0;
 .logo img{height:44px}
 .nav a{margin-left:0;color:var(--text);text-decoration:none;font-weight:600}
 /* Dropdown gallery menu */
-.nav{display:flex;align-items:center;gap:1rem}
+.nav{display:flex;align-items:center;gap:1rem;flex:0 1 auto;min-width:0;margin:0 auto}
 .dropdown{position:relative;display:inline-block}
 .dropbtn{background:none;border:none;color:var(--text);font-weight:600;cursor:pointer;padding:0;margin:0}
+/* Make dropdown button visually match nav links */
+.nav a, .dropbtn{display:inline-flex;align-items:center;gap:.25rem;color:var(--text);text-decoration:none;font-weight:600;background:none;border:none;padding:0;margin:0}
 .dropdown-content{display:none;position:absolute;top:calc(100% - 2px);left:0;background:#fff;min-width:180px;box-shadow:0 8px 20px rgba(0,0,0,0.08);border-radius:8px;overflow:hidden;z-index:30}
 .dropdown-content a{display:block;padding:.5rem .75rem;color:var(--text);text-decoration:none}
 .dropdown:hover .dropdown-content,.dropdown:focus-within .dropdown-content,.dropdown.open .dropdown-content{display:block}
@@ -55,7 +57,7 @@ body{font-family:Segoe UI, Roboto, Arial, sans-serif;color:var(--text);margin:0;
 .footer-credit a:hover{text-decoration:underline}
 
 /* Language switcher flags */
-.lang-switcher{display:flex;gap:.5rem;align-items:center;margin-left:1rem}
+.lang-switcher{display:flex;gap:.5rem;align-items:center;margin-left:1rem;flex:0 0 auto}
 .lang-btn{background:none;border:0;padding:0;cursor:pointer;display:inline-flex;align-items:center}
 .lang-btn img{width:28px;height:20px;display:block;border-radius:3px;box-shadow:0 1px 2px rgba(0,0,0,0.08)}
 .lang-btn:focus{outline:2px solid var(--accent);outline-offset:2px}
@@ -95,6 +97,7 @@ body{font-family:Segoe UI, Roboto, Arial, sans-serif;color:var(--text);margin:0;
   .hero{padding:2rem 0}
   .site-logo{height:64px}
   .nav{justify-content:center}
+  .lang-switcher{order:3;margin-left:auto}
   .dropdown-content{left:auto;right:0}
   .hero h1{font-size:1.6rem}
 }
