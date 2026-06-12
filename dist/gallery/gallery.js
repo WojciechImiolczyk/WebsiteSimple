@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const img = document.createElement('img');
       img.src = p.src;
       img.alt = p.alt || '';
+      img.loading = 'lazy';
+      img.decoding = 'async';
       img.style.width = '100%';
       img.style.height = '220px';
       img.style.objectFit = 'cover';
@@ -43,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
       iframe.height = '315';
       iframe.src = 'https://www.youtube.com/embed/' + encodeURIComponent(v.id);
       iframe.title = v.title || 'Video';
+      iframe.loading = 'lazy';
       iframe.frameBorder = '0';
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
       iframe.allowFullscreen = true;
