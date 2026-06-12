@@ -1,14 +1,26 @@
 {
   "photos": [
-    {
-      "src": "https://scontent.fktw1-1.fna.fbcdn.net/v/t39.30808-6/468662109_565627399754348_7183000759606468883_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s2048x2048&_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=WGyO2oW1uCkQ7kNvwGegRhM&_nc_oc=AdrCntsV3CjBanJGCr5Gctete__4TglffPYEWNF4GnEiMbGvzWdRGgiqcQV5SSWwvGg&_nc_zt=23&_nc_ht=scontent.fktw1-1.fna&_nc_gid=imvMAUV27H9ILCyZJcvxTA&_nc_ss=7b289&oh=00_Af_BIOVa2-gaBM8SiEUUNMXkqttSqk0MlWPflNVpHOtD0g&oe=6A2FFC8D",
-      "alt": "Placeholder — logo image"
-    }
+    { "src": "https://picsum.photos/seed/random-8893/1200/800", "alt": "Random placeholder photo" },
+    { "src": "https://picsum.photos/seed/photo2/1200/800", "alt": "Placeholder photo 2" },
+    { "src": "https://picsum.photos/seed/photo3/1200/800", "alt": "Placeholder photo 3" },
+    { "src": "https://picsum.photos/seed/photo4/1200/800", "alt": "Placeholder photo 4" },
+    { "src": "https://picsum.photos/seed/photo5/1200/800", "alt": "Placeholder photo 5" },
+    { "src": "https://picsum.photos/seed/photo6/1200/800", "alt": "Placeholder photo 6" },
+    { "src": "https://picsum.photos/seed/photo7/1200/800", "alt": "Placeholder photo 7" },
+    { "src": "https://picsum.photos/seed/photo8/1200/800", "alt": "Placeholder photo 8" },
+    { "src": "https://picsum.photos/seed/photo9/1200/800", "alt": "Placeholder photo 9" },
+    { "src": "https://picsum.photos/seed/photo10/1200/800", "alt": "Placeholder photo 10" },
+    { "src": "https://picsum.photos/seed/photo11/1200/800", "alt": "Placeholder photo 11" },
+    { "src": "https://picsum.photos/seed/photo12/1200/800", "alt": "Placeholder photo 12" },
+    { "src": "https://picsum.photos/seed/photo13/1200/800", "alt": "Placeholder photo 13" },
+    { "src": "https://picsum.photos/seed/photo14/1200/800", "alt": "Placeholder photo 14" },
+    { "src": "https://picsum.photos/seed/photo15/1200/800", "alt": "Placeholder photo 15" }
   ],
   "videos": [
-    {
-      "id": "dQw4w9WgXcQ",
-      "title": "Przykładowe wideo"
-    }
+    { "id": "M7lc1UVf-VE", "title": "YouTube Developers Live" },
+    { "id": "kXYiU_JCYtU", "title": "Linkin Park - Numb" },
+    { "id": "3JZ_D3ELwOQ", "title": "Bruno Mars - Just The Way You Are" },
+    { "id": "L_jWHffIx5E", "title": "Smashing Pumpkins - 1979" },
+    { "id": "dQw4w9WgXcQ", "title": "Sample Video" }
   ]
 }

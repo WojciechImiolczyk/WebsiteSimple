@@ -21,8 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
       img.alt = p.alt || '';
       img.loading = 'lazy';
       img.decoding = 'async';
-      img.style.width = '100%';
-      img.style.height = '220px';
       img.style.objectFit = 'cover';
       img.style.borderRadius = '6px';
       a.appendChild(img);
@@ -41,15 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
       wrap.className = 'video-embed';
       wrap.style.marginBottom = '1rem';
       const iframe = document.createElement('iframe');
-      iframe.width = '560';
-      iframe.height = '315';
       iframe.src = 'https://www.youtube.com/embed/' + encodeURIComponent(v.id);
       iframe.title = v.title || 'Video';
       iframe.loading = 'lazy';
       iframe.frameBorder = '0';
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
       iframe.allowFullscreen = true;
-      iframe.style.maxWidth = '100%';
+      iframe.style.width = '100%';
+      iframe.style.aspectRatio = '16/9';
       wrap.appendChild(iframe);
       list.appendChild(wrap);
     });
