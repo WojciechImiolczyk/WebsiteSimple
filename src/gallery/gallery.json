@@ -1,6 +1,6 @@
 {
   "photos": [
-    { "src": "https://picsum.photos/seed/photo1/1200/800", "alt": "Placeholder photo 1" },
+    { "src": "https://picsum.photos/seed/random-8893/1200/800", "alt": "Random placeholder photo" },
     { "src": "https://picsum.photos/seed/photo2/1200/800", "alt": "Placeholder photo 2" },
     { "src": "https://picsum.photos/seed/photo3/1200/800", "alt": "Placeholder photo 3" },
     { "src": "https://picsum.photos/seed/photo4/1200/800", "alt": "Placeholder photo 4" },
@@ -11,7 +11,10 @@
     { "src": "https://picsum.photos/seed/photo9/1200/800", "alt": "Placeholder photo 9" },
     { "src": "https://picsum.photos/seed/photo10/1200/800", "alt": "Placeholder photo 10" },
     { "src": "https://picsum.photos/seed/photo11/1200/800", "alt": "Placeholder photo 11" },
-    { "src": "https://picsum.photos/seed/photo12/1200/800", "alt": "Placeholder photo 12" }
+    { "src": "https://picsum.photos/seed/photo12/1200/800", "alt": "Placeholder photo 12" },
+    { "src": "https://picsum.photos/seed/photo13/1200/800", "alt": "Placeholder photo 13" },
+    { "src": "https://picsum.photos/seed/photo14/1200/800", "alt": "Placeholder photo 14" },
+    { "src": "https://picsum.photos/seed/photo15/1200/800", "alt": "Placeholder photo 15" }
   ],
   "videos": [
     { "id": "M7lc1UVf-VE", "title": "YouTube Developers Live" },

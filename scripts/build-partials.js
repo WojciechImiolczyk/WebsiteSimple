@@ -82,6 +82,11 @@ function copyDir(src, dest){
   copyDir(s, d);
 });
 
+// Also copy gallery assets from src/gallery if present (we keep gallery source under src/)
+const srcGallery = path.join(srcDir, 'gallery');
+const outGallery = path.join(outDir, 'gallery');
+copyDir(srcGallery, outGallery);
+
 ['favicon.ico'].forEach(name => {
   const s = path.join(workspaceRoot, name);
   const d = path.join(outDir, name);
