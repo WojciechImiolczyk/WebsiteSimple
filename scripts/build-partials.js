@@ -72,7 +72,11 @@ function copyDir(src, dest){
     const s = path.join(src, e.name);
     const d = path.join(dest, e.name);
     if(e.isDirectory()) copyDir(s, d);
-    else fs.copyFileSync(s, d);
+    else {
+      // avoid copying HTML files from src (they are processed separately)
+      if(path.extname(e.name).toLowerCase() === '.html') continue;
+      fs.copyFileSync(s, d);
+    }
   }
 }
 
