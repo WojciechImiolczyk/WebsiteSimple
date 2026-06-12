@@ -16,17 +16,21 @@ body{font-family:Segoe UI, Roboto, Arial, sans-serif;color:var(--text);margin:0;
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0}
 .site-header .header-inner{width:100%;padding:0.5rem 1rem}
 .logo img{height:44px}
-.nav a{margin-left:0;color:var(--text);text-decoration:none;font-weight:600}
+.nav a{margin-left:0;color:var(--text);text-decoration:none;font-weight:600;padding:.35rem .25rem;font-size:0.95rem}
 /* Dropdown gallery menu */
 .nav{display:flex;align-items:center;gap:1rem;flex:0 1 auto;min-width:0;margin:0 auto}
 .dropdown{position:relative;display:inline-block}
 .dropbtn{background:none;border:none;color:var(--text);font-weight:600;cursor:pointer;padding:0;margin:0}
 /* Make dropdown button visually match nav links */
-.nav a, .dropbtn{display:inline-flex;align-items:center;gap:.25rem;color:var(--text);text-decoration:none;font-weight:600;background:none;border:none;padding:0;margin:0}
+.nav a, .dropbtn{display:inline-flex;align-items:center;gap:.25rem;color:var(--text);text-decoration:none;background:none;border:none;padding:.35rem .25rem;margin:0}
+.dropbtn{font-family:inherit;font-size:inherit;font-weight:inherit;line-height:1;appearance:none}
 .dropdown-content{display:none;position:absolute;top:calc(100% - 2px);left:0;background:#fff;min-width:180px;box-shadow:0 8px 20px rgba(0,0,0,0.08);border-radius:8px;overflow:hidden;z-index:30}
 .dropdown-content a{display:block;padding:.5rem .75rem;color:var(--text);text-decoration:none}
 .dropdown:hover .dropdown-content,.dropdown:focus-within .dropdown-content,.dropdown.open .dropdown-content{display:block}
 .dropdown .dropbtn::after{content:" ▾";font-weight:600;margin-left:6px}
+
+/* Active nav link and dropdown button styling */
+.nav a.active, .dropbtn.active, .dropdown.active .dropbtn{color:var(--accent)}
 .hero{background:linear-gradient(135deg,#ffeef3,#fff);padding:3.5rem 0;text-align:center}
 .hero h1{font-size:2rem;margin:0 0 .5rem}
 .hero p{color:var(--muted);margin:0 0 1rem}
