@@ -3,8 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
   fetch(basePath + '/gallery.json')
     .then(res => res.json())
     .then(data => {
+      // render now, and again when translations load
       if (document.getElementById('photos-grid')) renderPhotos(data.photos);
       if (document.getElementById('videos-list')) renderVideos(data.videos);
+
+      document.addEventListener('i18n:loaded', function(){
+        if (document.getElementById('photos-grid')) renderPhotos(data.photos);
+        if (document.getElementById('videos-list')) renderVideos(data.videos);
+      });
     })
     .catch(err => console.error('Failed to load gallery.json', err));
 
@@ -18,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
       a.rel = 'noopener';
       const img = document.createElement('img');
       img.src = p.src;
-      img.alt = p.alt || '';
+      // prefer per-photo alt, otherwise use i18n fallback
+      img.alt = p.alt || i18nLookup('gallery.photos.imageAlt') || '';
       img.loading = 'lazy';
       img.decoding = 'async';
       img.style.objectFit = 'cover';
@@ -40,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
       wrap.style.marginBottom = '1rem';
       const iframe = document.createElement('iframe');
       iframe.src = 'https://www.youtube.com/embed/' + encodeURIComponent(v.id);
-      iframe.title = v.title || 'Video';
+      iframe.title = v.title || i18nLookup('gallery.videos.defaultTitle') || 'Video';
       iframe.loading = 'lazy';
       iframe.frameBorder = '0';
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
@@ -50,5 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
       wrap.appendChild(iframe);
       list.appendChild(wrap);
     });
+  }
+
+  function i18nLookup(key){
+    try{
+      if(window._i18n){
+        return key.split('.').reduce((o,k)=> (o && o[k] !== undefined) ? o[k] : undefined, window._i18n);
+      }
+    }catch(e){}
+    return undefined;
   }
 });

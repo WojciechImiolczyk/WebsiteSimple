@@ -1,0 +1,65 @@
+{
+  "skipLink": "Skip to content",
+  "nav": {
+    "about": "About",
+    "offer": "Offer",
+    "gallery": {
+      "label": "Gallery",
+      "photos": "Photos",
+      "videos": "Videos"
+    },
+    "contact": "Contact"
+  },
+  "page": {
+    "title": {
+      "index": "Placeholder — Home",
+      "about": "About — Placeholder",
+      "contact": "Contact — Placeholder",
+      "offer": "Offer — Placeholder",
+      "404": "404 — Not found",
+      "gallery": {
+        "photos": "Gallery — Photos",
+        "videos": "Gallery — Videos"
+      }
+    }
+  },
+  "hero": {
+    "title": {
+      "index": "Placeholder — the heart of our community"
+    },
+    "description": {
+      "index": "We organize, support and connect people. Join us."
+    },
+    "cta": "Get in touch"
+  },
+  "about": {
+    "heading": "About",
+    "lead": "Here you can put a full description of the mission, history and activities of Placeholder. Replace this text with your organization's content.",
+    "more": "More content about the organization can go here."
+  },
+  "contact": {
+    "heading": "Contact",
+    "lead": "Questions? Write to us: <a href=\"mailto:kontakt@placeholder.pl\">kontakt@placeholder.pl</a>",
+    "more": "Contact form and additional information here."
+  },
+  "offer": {
+    "heading": "Offer",
+    "lead": "Discover our offer — events, support and volunteering opportunities.",
+    "cards": {
+      "events": { "title": "Events", "desc": "We organize and co-organize local events." },
+      "support": { "title": "Support", "desc": "Support for social projects and partnerships." },
+      "volunteering": { "title": "Volunteering", "desc": "Opportunities for volunteers to get involved." }
+    }
+  },
+  "gallery": {
+    "photos": { "heading": "Gallery — Photos", "lead": "Browse our photos from events and projects." },
+    "videos": { "heading": "Gallery — Videos", "lead": "YouTube videos. Click a player to watch." }
+  },
+  "footer": {
+    "copy": "© Placeholder — All rights reserved",
+    "powered": "Powered By <a href=\"https://www.linkedin.com/in/wojciechimiolczyk/\" target=\"_blank\" rel=\"noopener\">Wojciech Imiołczyk</a>"
+  },
+  "error": {
+    "404": { "heading": "404 — Not found", "text": "The page you are looking for does not exist. <a href=\"/\">Return to homepage</a>" }
+  }
+}

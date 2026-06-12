@@ -1,0 +1,65 @@
+{
+  "skipLink": "Przejdź do treści",
+  "nav": {
+    "about": "O nas",
+    "offer": "Oferta",
+    "gallery": {
+      "label": "Galeria",
+      "photos": "Zdjęcia",
+      "videos": "Filmy"
+    },
+    "contact": "Kontakt"
+  },
+  "page": {
+    "title": {
+      "index": "Placeholder — Strona",
+      "about": "O nas — Placeholder",
+      "contact": "Kontakt — Placeholder",
+      "offer": "Oferta — Placeholder",
+      "404": "404 — Nie znaleziono",
+      "gallery": {
+        "photos": "Galeria — Zdjęcia",
+        "videos": "Galeria — Filmy"
+      }
+    }
+  },
+  "hero": {
+    "title": {
+      "index": "Placeholder — serce naszej społeczności"
+    },
+    "description": {
+      "index": "Organizujemy, wspieramy i łączymy ludzi. Dołącz do nas."
+    },
+    "cta": "Skontaktuj się"
+  },
+  "about": {
+    "heading": "O nas",
+    "lead": "Tu możesz umieścić pełny opis misji, historii i działań Placeholder. Zastąp ten tekst treścią organizacji.",
+    "more": "Więcej treści o organizacji może się znaleźć tutaj."
+  },
+  "contact": {
+    "heading": "Kontakt",
+    "lead": "Masz pytania? Napisz do nas: <a href=\"mailto:kontakt@placeholder.pl\">kontakt@placeholder.pl</a>",
+    "more": "Formularz kontaktowy i dodatkowe informacje tutaj."
+  },
+  "offer": {
+    "heading": "Oferta",
+    "lead": "Poznaj naszą ofertę — wydarzenia, wsparcie i możliwości wolontariatu.",
+    "cards": {
+      "events": { "title": "Wydarzenia", "desc": "Organizujemy i współorganizujemy wydarzenia lokalne." },
+      "support": { "title": "Wsparcie", "desc": "Wsparcie projektów społecznych i partnerstw." },
+      "volunteering": { "title": "Wolontariat", "desc": "Możliwości zaangażowania dla wolontariuszy." }
+    }
+  },
+  "gallery": {
+    "photos": { "heading": "Galeria — Zdjęcia", "lead": "Przeglądaj nasze zdjęcia z wydarzeń i projektów." },
+    "videos": { "heading": "Galeria — Filmy", "lead": "Filmy z YouTube. Kliknij odtwarzacz, aby obejrzeć." }
+  },
+  "footer": {
+    "copy": "© Placeholder — Wszystkie prawa zastrzeżone",
+    "powered": "Powered By <a href=\"https://www.linkedin.com/in/wojciechimiolczyk/\" target=\"_blank\" rel=\"noopener\">Wojciech Imiołczyk</a>"
+  },
+  "error": {
+    "404": { "heading": "404 — Nie znaleziono", "text": "Strona, której szukasz, nie istnieje. <a href=\"/\">Powrót do strony głównej</a>" }
+  }
+}
